@@ -1,5 +1,10 @@
 # Handwritten Character Recognition
 
+## The problem
+
+One police department needs to digitalize an old vehicle database. Every card from the database has special field with 17 boxes that is filled by handwritten VIN-code (vehicle identification number) characters - one character in each box. The cards are already scanned and the VIN-code 
+boxes are already recognized. The task is to design a neural network that can classify small squared black&white image (VIN character boxes) with single handwritten character on it. 
+
 The project contains two pyhon scripts, one for preparing the data, another is the actual script that utilizes the trained model for inference on unseen data.
 
 Below is the detailed description of both scripts:
@@ -46,13 +51,13 @@ This script is used to recognize handwritten characters from images in the input
 
 ## Usage Instructions
 
-1. Unzip the archive with the following files: train.py, inference.py, requirements.txt, model.h5, readme.md into a single folder and change directory (cd) to that folder
+1. Clone the repository with the following files: train.py, inference.py, requirements.txt, model.h5, dockerfile into a single folder and change directory (cd) to that folder
 
 2. Run the following command to create a docker image: 
    
    ``` docker build -t ocr . ``` 
 
-   You can specify any other name for the docker image instead of "OCR".
+   You can specify any other name for the docker image instead of "ocr".
 3. Run the following command to create a docker container and perform an inference on the data located in the data/folder/ local folder, you can also modify the /destination/folder to whichever destination you would like. $PWD specifies the present working directory.
 
 For MacOS:
@@ -65,6 +70,7 @@ For MacOS:
 
 ```docker run -it --rm -v $PWD/app/test:/mnt/test_data ocr python3 /app/inference.py --input /mnt/test_data```
 
+For Windows use the requirements.txt to create an enviroment and run the inference.py script directly with the --input argument.
 
 1. The script will print the predicted character in the ASCII decimal format and the POSIX path to image sample pair in a CSV format for each image in the input folder. Example of output:
    
