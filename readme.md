@@ -83,14 +83,6 @@ For Windows use the requirements.txt to create an enviroment and run the inferen
     85, /mnt/test_data/image_2702.png
 
 
-## Author information 
-Vladyslav Honcharuk is a highly motivated computer science student with a minor in Health Data Science at Kyiv Polytechnic Institute. His passion lies in the fields of Data Science, Machine Learning, and Data Engineering.
-
-He has achieved academic excellence during his studies, consistently ranking among the top students at his university. Vladyslav also have taken advantage of numerous opportunities for personal and professional growth, including participating in a study abroad programs at Kyoto University and Shibaura University, an exchange program at Ukrainian Catholic University in cooperation with Akita University, and an internship at Poznan University in Artificial Intelligence.
-
-He is also the holder of a Data Engineering Professional Certificate from the Massachusetts Institute of Technology (MIT). 
-
-He has a solid understanding of programming languages:  Python, C++, and databases: SQL (MySQL, PostgreSQL) and NoSQL (MongoDB, Redis, Cassandra, Firebase). 
 
 Links to social media:
 
